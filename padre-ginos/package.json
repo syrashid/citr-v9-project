@@ -6,16 +6,25 @@
   "scripts": {
     "typecheck": "bun check",
     "format": "prettier --write \"src/**/*.{js,jsx,css}\"",
-    "lint": "eslint"
+    "lint": "eslint",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@types/bun": "latest",
+    "@vitejs/plugin-react": "4.3.1",
     "eslint": "9.9.1",
     "eslint-config-prettier": "9.1.0",
     "globals": "15.9.0",
-    "prettier": "^3.9.10"
+    "prettier": "^3.9.10",
+    "vite": "6.4.5"
   },
   "peerDependencies": {
     "typescript": "^7"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   }
 }
